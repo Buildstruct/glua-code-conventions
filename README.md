@@ -15,7 +15,8 @@ function bs.MyFunction() end
 -- everything that can be identified with a string should have "BS_" or "bs_" prepended before it
 -- in order to avoid collisions with other addons
 
--- hooks, named timers, vgui elements, etc. prepended with "BS_" and PascalCase
+-- methods, hooks, named timers, vgui elements, etc. prepended with "BS_" and PascalCase
+function PLAYER:BS_MyMethod() end
 hook.Add("OnGamemodeLoaded", "BS_MyHook", function() end)
 timer.Create("BS_MyTimer", 60, 1, function() end)
 vgui.Register("BS_MyElement", PANEL, "DPanel")
